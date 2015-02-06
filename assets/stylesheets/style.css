@@ -1,0 +1,139 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin:0; padding:0; border:0; background:transparent;
+  /*vertical-align: baseline;*/
+}
+
+html { height: 100%; }
+
+body {
+  height: 100%;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url(http://blueokapi.com/wp-content/uploads/2013/05/header-banner-bg-contact.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+
+form {
+  margin: 0 auto;
+  max-width: 850px;
+  padding: 20px 10px;
+  background-color: rgba(255,255,255,0.4)
+}
+
+form:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.input {
+  float: left;
+  width: 48%;
+  padding: 0 1% 20px;
+  position: relative;
+}
+
+.input.txt { width: 98%; }
+
+.input label {
+  display: block;
+  padding-bottom: 5px;
+  color: #666;
+}
+
+.input label.error {
+  position: absolute;
+  right: 18px;
+  top: 35px;
+  color: #f00;
+}
+
+.input input,
+.input textarea {
+  padding-top: 10px;
+  padding-bottom: 9px;
+  border: none;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.input input {
+  width: 94%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.input textarea {
+  width: 97%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+.buttons {
+  clear: both;
+  margin: 0 1%;
+  padding-top: 20px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.buttons input[type="submit"] {
+  float: right;
+  border: none;
+  height: 37px;
+  line-height: 1;
+  font-size: 18px;
+  padding: 0 15px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #888;
+  transition: all 300ms ease-in-out;
+}
+
+.buttons input[type="submit"]:hover {
+  color: #888;
+  background-color: #fff;
+}
+
+.form-message {
+  float: left;
+  padding-top: 5px;
+  color: #888;
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+
+.form-message.success {
+  color: green;
+  opacity: 1;
+}
+
+.form-message.error {
+  color: red;
+  opacity: 1;
+}
+
+@media screen and (max-width: 520px) {
+  .input {
+    width: 98%;
+  }
+
+  .form-message {
+    width: 260px;
+  }
+}

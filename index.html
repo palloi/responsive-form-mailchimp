@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create responsive form with integrate mailchimp</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    
+    <meta name="description" content="See this example of create responsive form with integrate mailchimp. Using html, css and jquery. by Palloi Hofmann">
+    <meta name="keywords" content="css4html, css+for+html, css 4 html, css4, css4 html, css, css3, html, html5, mailchimp, jquery, ajax, api" />
+
+    <meta property="og:image" content="http://palloi.github.io/responsive-form-mailchimp/assets/images/img-form-responsive.png" />
+    <meta property="og:keywords" content="css4html, css+for+html, css 4 html, css4, css4 html, css, css3, html, html5, mailchimp, jquery, ajax, api" />
+    <meta property="og:description" content="See this example of create responsive form with integrate mailchimp. Using html, css and jquery. by Palloi Hofmann" />
+
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
+  </head>
+  <body>
+    <section>
+      <h1>CREATE RESPONSIVE FORM WITH INTEGRATE MAILCHIMP</h1>
+      <form id="form-contact" method="POST" action="mailchimp-contact.php">
+        <div class="input">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="input">
+          <label for="email">E-mail</label>
+          <input type="text" id="email" name="email" placeholder="Your e-mail" required>
+        </div>
+        <div class="input">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" maxlength="13" placeholder="Your phone" required>
+        </div>
+        <div class="input">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" placeholder="Name of its company" required>
+        </div>
+        <div class="input txt">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" cols="10" rows="5" placeholder="Its message leaves" required></textarea>
+        </div>
+        <div class="buttons">
+          <span class="form-message"></span>
+          <input type="submit" value="SEND" />
+        </div>
+      </form>
+    </section>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="http://css4html.com.br/assets/javascripts/jquery.phone.brazil.min.js"></script>
+    <script type="text/javascript" src="assets/javascripts/script.js"></script>
+  </body>
+</html>
